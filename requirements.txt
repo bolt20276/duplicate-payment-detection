@@ -1,0 +1,19 @@
+# Kafka
+kafka-python==2.0.2
+
+# Redis
+redis==5.0.1
+
+# PostgreSQL
+psycopg[binary]
+SQLAlchemy==2.0.23
+
+# Data generation
+faker==20.1.0
+
+# Configuration
+python-dotenv==1.0.0
+
+# Utilities
+orjson==3.10.12
+loguru==0.7.2
