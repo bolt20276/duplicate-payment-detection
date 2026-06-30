@@ -1,6 +1,6 @@
 Real-Time Duplicate Payment Detection & Idempotency Enforcement
-A streaming idempotency gateway that ingests every payment request, checks it against a registry of processed payments using a deterministic idempotency key, and either forwards it or blocks it — in under 50 milliseconds.
-Built on an open-source stack — Kafka, Redis, PostgreSQL, Airflow, Grafana — following medallion architecture (Bronze → Silver → Gold) with incremental, watermark-based loading.
+A streaming idempotency gateway that ingests every payment request, checks it against a registry of processed payments using a deterministic idempotency key, and either forwards it or blocks it in under 50 milliseconds.
+Built on an open source stack: Kafka, Redis, PostgreSQL, Airflow, Grafana, following medallion architecture (Bronze → Silver → Gold) with incremental, watermark-based loading.
 The Problem
 In payment systems, network timeouts cause merchants to retry payments that already succeeded, resulting in customers being charged twice. Batch reconciliation catches this a day later, after the damage is done. This system catches it in real time, before the second charge ever happens.
 Workflow
